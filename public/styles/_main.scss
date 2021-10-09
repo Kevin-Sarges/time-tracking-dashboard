@@ -1,0 +1,47 @@
+.container {
+  width: 90%;
+
+  .perfil {
+    max-width: 15rem;
+    text-align: justify;
+    background: $Dark-blue;
+    border-radius: 10px;
+
+    .info {
+      padding: 1.5rem 1.5rem 4rem 1.5rem;
+      background: $Desaturated-blue;
+      border-radius: 10px;
+
+      img {
+        width: 30%;
+        margin-bottom: 2rem;
+        border-radius: 99px;
+        border: 2px solid $white;
+      }
+
+      #name {
+        font-size: 30px;
+        font-weight: 300;
+        color: $white;
+      }
+    }
+
+    ul {
+      padding: 1rem;
+      list-style: none;
+
+      li {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
