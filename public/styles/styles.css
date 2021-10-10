@@ -1,5 +1,5 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,7 +12,8 @@ body, html {
 
 body {
   margin: 0 auto;
-  text-align: center;
+  display: -ms-grid;
+  display: grid;
   font-size: 18px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -33,11 +34,18 @@ body ul {
 }
 
 .container {
-  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
 }
 
 .container .perfil {
-  max-width: 15rem;
+  max-width: 90%;
   text-align: justify;
   background: #1c1f4a;
   border-radius: 10px;
@@ -69,6 +77,49 @@ body ul {
 
 .container .perfil ul li {
   margin: 1rem;
+}
+
+.container .schedules {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.container .schedules .components {
+  border-radius: 10px;
+}
+
+.container .schedules #work {
+  background: #ff8c66;
+}
+
+.container .schedules #play {
+  background: #56c2e6;
+}
+
+.container .schedules #study {
+  background: #ff5c7c;
+}
+
+.container .schedules #exercise {
+  background: #4acf81;
+}
+
+.container .schedules #social {
+  background: #7536d3;
+}
+
+.container .schedules #self {
+  background: #f1c65b;
+}
+
+.container .schedules .hours {
+  background: #1c1f4a;
+  border-radius: 10px;
 }
 
 .attribution {

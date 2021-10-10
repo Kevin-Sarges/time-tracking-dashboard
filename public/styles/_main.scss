@@ -1,8 +1,11 @@
 .container {
-  width: 90%;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  grid-template-columns: 40% 60%;
 
   .perfil {
-    max-width: 15rem;
+    max-width: 90%;
     text-align: justify;
     background: $Dark-blue;
     border-radius: 10px;
@@ -33,6 +36,46 @@
       li {
         margin: 1rem;
       }
+    }
+  }
+
+  .schedules {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-self: center;
+
+    .components {
+      border-radius: 10px;
+    }
+
+    #work {
+      background: $Light-red-work;
+    }
+
+    #play {
+      background: $Soft-blue-play;
+    }
+
+    #study {
+      background: $Light-red-study;
+    }
+
+    #exercise {
+      background: $Lime-green-exercise;
+    }
+
+    #social {
+      background: $Violet-social;
+    }
+
+    #self {
+      background: $Soft-orange-self;
+    }
+
+    .hours {
+      background: $Dark-blue;
+      border-radius: 10px;
     }
   }
 }
