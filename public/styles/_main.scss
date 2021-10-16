@@ -1,11 +1,14 @@
 .container {
   display: grid;
-  align-self: center;
+  grid-template-columns: 23% 74%;
+  grid-template-rows: 88%;
+  gap: 20px;
   justify-self: center;
-  grid-template-columns: 40% 60%;
+  justify-content: center;
+  align-self: center;
 
   .perfil {
-    max-width: 90%;
+    max-width: 100%;
     text-align: justify;
     background: $Dark-blue;
     border-radius: 10px;
@@ -42,11 +45,45 @@
   .schedules {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    justify-self: center;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+
 
     .components {
+      text-align: end;
       border-radius: 10px;
+      
+      img {
+        width: 30%;
+        margin: 0 1rem;
+        top: 10;
+      }
+
+      .hours {
+        width: 100%;
+        padding: 1rem;
+        text-align: left;
+        background: $Dark-blue;
+        border-radius: 10px;
+  
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          img {
+            width: 1.5rem;
+          }
+        }
+      }
+
+      #time {
+        margin: 1rem 0;
+        color: $white;
+        font-size: 42px;
+        font-weight: 300; 
+      }
     }
 
     #work {
@@ -71,11 +108,6 @@
 
     #self {
       background: $Soft-orange-self;
-    }
-
-    .hours {
-      background: $Dark-blue;
-      border-radius: 10px;
     }
   }
 }

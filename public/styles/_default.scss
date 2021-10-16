@@ -11,12 +11,14 @@ body, html {
 
 body {
   margin: 0 auto;
-  display: grid;
   font-size: 18px;
   font-family: $Rubik;
   font-weight: 400;
   background: $Very-dark-blue;
   color: $white;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 
   h4 {
     font-weight: 400;

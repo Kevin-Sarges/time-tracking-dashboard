@@ -12,13 +12,18 @@ body, html {
 
 body {
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
   font-size: 18px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   background: #0f1424;
   color: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 body h4 {
@@ -36,16 +41,22 @@ body ul {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-columns: 23% 74%;
+      grid-template-columns: 23% 74%;
+  -ms-grid-rows: 88%;
+      grid-template-rows: 88%;
+  gap: 20px;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .container .perfil {
-  max-width: 90%;
+  max-width: 100%;
   text-align: justify;
   background: #1c1f4a;
   border-radius: 10px;
@@ -84,13 +95,54 @@ body ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .schedules .components {
+  text-align: end;
   border-radius: 10px;
+}
+
+.container .schedules .components img {
+  width: 30%;
+  margin: 0 1rem;
+  top: 10;
+}
+
+.container .schedules .components .hours {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  background: #1c1f4a;
+  border-radius: 10px;
+}
+
+.container .schedules .components .hours .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .schedules .components .hours .title img {
+  width: 1.5rem;
+}
+
+.container .schedules .components #time {
+  margin: 1rem 0;
+  color: white;
+  font-size: 42px;
+  font-weight: 300;
 }
 
 .container .schedules #work {
@@ -115,11 +167,6 @@ body ul {
 
 .container .schedules #self {
   background: #f1c65b;
-}
-
-.container .schedules .hours {
-  background: #1c1f4a;
-  border-radius: 10px;
 }
 
 .attribution {
