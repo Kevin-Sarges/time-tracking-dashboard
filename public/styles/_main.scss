@@ -1,7 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 23% 74%;
-  grid-template-rows: 88%;
+  grid-template-columns: 24% 78%;
   gap: 20px;
   justify-self: center;
   justify-content: center;
@@ -38,6 +37,11 @@
 
       li {
         margin: 1rem;
+
+        &:hover {
+          color: $white;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -51,19 +55,12 @@
 
 
     .components {
-      text-align: end;
-      border-radius: 10px;
-      
-      img {
-        width: 30%;
-        margin: 0 1rem;
-        top: 10;
-      }
+      padding: 3rem 0 0 0;
+      border-radius: 13px;
 
       .hours {
         width: 100%;
         padding: 1rem;
-        text-align: left;
         background: $Dark-blue;
         border-radius: 10px;
   
@@ -74,7 +71,12 @@
 
           img {
             width: 1.5rem;
+            cursor: pointer;
           }
+        }
+
+        &:hover {
+          background: hsl(237, 26%, 41%);
         }
       }
 
@@ -87,36 +89,90 @@
     }
 
     #work {
-      background: $Light-red-work;
+      background: url(../images/icon-work.svg) no-repeat right top $Light-red-work;
     }
 
     #play {
-      background: $Soft-blue-play;
+      background: url(../images/icon-play.svg) no-repeat right top $Soft-blue-play;
     }
 
     #study {
-      background: $Light-red-study;
+      background: url(../images/icon-study.svg) no-repeat right top $Light-red-study;
     }
 
     #exercise {
-      background: $Lime-green-exercise;
+      background: url(../images/icon-exercise.svg) no-repeat right top $Lime-green-exercise;
     }
 
     #social {
-      background: $Violet-social;
+      background: url(../images/icon-social.svg) no-repeat right top $Violet-social;
     }
 
     #self {
-      background: $Soft-orange-self;
+      background: url(../images/icon-self-care.svg) no-repeat right top $Soft-orange-self;
     }
+  }
+
+  @media (max-width: 875px) {
+    margin: 0 20%;
+    grid-template-columns: none;
+
+    .perfil {
+      margin-top: 66rem;
+
+      .info {
+        padding: 1rem;
+        display: flex;
+
+        .text {  
+          margin-top: 1rem;
+          margin-left: .8rem;
+          
+          #name {
+            font-size: 23px;
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+      }
+    }
+
+    .schedules {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+      .text-hours {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        #time {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 280px) {
+    margin: 0 30%;
   }
 }
 
 .attribution {
   font-size: 11px;
-  text-align: center;
+  position: absolute;
+
+  bottom: 0;
+  left: 40%;
+
 
   a {
     color: hsl(228, 45%, 44%);
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
   }
 }
