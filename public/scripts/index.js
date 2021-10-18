@@ -1,3 +1,11 @@
 const db = require("../../data.json");
 
-const hours = document.getElementsByClassName("options");
+function buttonOpen() {
+  const button = document.getElementById("test");
+  button.classList.toggle("active");
+}
+
+function buttonClose() {
+  const button = document.getElementById("test");
+  button.className.toggle("hidden");
+}

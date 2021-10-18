@@ -116,6 +116,7 @@ body ul {
   padding: 1rem;
   background: #1c1f4a;
   border-radius: 10px;
+  position: relative;
 }
 
 .container .schedules .components .hours .title {
@@ -137,6 +138,16 @@ body ul {
 
 .container .schedules .components .hours:hover {
   background: #4d5084;
+}
+
+.container .schedules .components .hours .test {
+  position: fixed;
+  margin-top: 20px;
+  padding: 20px 40px 20px 20px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  display: none;
 }
 
 .container .schedules .components #time {

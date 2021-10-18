@@ -63,6 +63,7 @@
         padding: 1rem;
         background: $Dark-blue;
         border-radius: 10px;
+        position: relative;
   
         .title {
           display: flex;
@@ -77,6 +78,16 @@
 
         &:hover {
           background: hsl(237, 26%, 41%);
+        }
+
+        .test {
+          position: fixed;
+          margin-top: 20px;
+          padding: 20px 40px 20px 20px;
+          background: $white;
+          color: black;
+          border-radius: 5px;
+          display: none;
         }
       }
 
