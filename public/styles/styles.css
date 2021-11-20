@@ -88,7 +88,12 @@ body ul {
   margin: 1rem;
 }
 
-.container .perfil ul li:hover {
+.container .perfil ul li a {
+  text-decoration: none;
+  color: #bdc1ff;
+}
+
+.container .perfil ul li a:hover {
   color: white;
   cursor: pointer;
 }
@@ -117,6 +122,7 @@ body ul {
   background: #1c1f4a;
   border-radius: 10px;
   position: relative;
+  cursor: default;
 }
 
 .container .schedules .components .hours .title {
@@ -188,7 +194,7 @@ body ul {
         grid-template-columns: none;
   }
   .container .perfil {
-    margin-top: 66rem;
+    margin-top: 50rem;
   }
   .container .perfil .info {
     padding: 1rem;
@@ -198,7 +204,7 @@ body ul {
   }
   .container .perfil .info .text {
     margin-top: 1rem;
-    margin-left: .8rem;
+    margin-left: 0.8rem;
   }
   .container .perfil .info .text #name {
     font-size: 23px;

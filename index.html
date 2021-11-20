@@ -34,84 +34,24 @@
         </div>
 
         <ul id="options">
-          <li>Daily</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
+          <li><a href="#" onclick="dailyHours()">Daily</a></li>
+          <li><a href="#" onclick="monthlyHour()">Weekly</a></li>
+          <li><a href="#" onclick="weeklyHour()">Monthly</a></li>
         </ul>
       </div>
 
       <div class="schedules">
         <div class="components" id="work"></div>
 
-        <div class="components" id="play">
-          <div class="hours">
-            <div class="title">
-              <h4>Play</h4>
-              <img src="./public/images/icon-ellipsis.svg" alt="options" />
-            </div>
+        <div class="components" id="play"></div>
 
-            <div class="text-hours">
-              <p id="time">10hrs</p>
-              <p>Previous - 8hrs</p>
-            </div>
-          </div>
-        </div>
+        <div class="components" id="study"></div>
 
-        <div class="components" id="study">
-          <div class="hours">
-            <div class="title">
-              <h4>Study</h4>
-              <img src="./public/images/icon-ellipsis.svg" alt="options" />
-            </div>
+        <div class="components" id="exercise"></div>
 
-            <div class="text-hours">
-              <p id="time">4hrs</p>
-              <p>Previous - 7hrs</p>
-            </div>
-          </div>
-        </div>
+        <div class="components" id="social"></div>
 
-        <div class="components" id="exercise">
-          <div class="hours">
-            <div class="title">
-              <h4>Exercise</h4>
-              <img src="./public/images/icon-ellipsis.svg" alt="options" />
-            </div>
-
-            <div class="text-hours">
-              <p id="time">4hrs</p>
-              <p>Previous - 5hrs</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="components" id="social">
-          <div class="hours">
-            <div class="title">
-              <h4>Social</h4>
-              <img src="./public/images/icon-ellipsis.svg" alt="options" />
-            </div>
-
-            <div class="text-hours">
-              <p id="time">5hrs</p>
-              <p>Previous - 10hrs</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="components" id="self">
-          <div class="hours">
-            <div class="title">
-              <h4>Self Care</h4>
-              <img src="./public/images/icon-ellipsis.svg" alt="options" />
-            </div>
-
-            <div class="text-hours">
-              <p id="time">2hrs</p>
-              <p>Previous - 2hrs</p>
-            </div>
-          </div>
-        </div>
+        <div class="components" id="self"></div>
       </div>
     </div>
 
@@ -123,5 +63,7 @@
     </div>
 
     <script type="text/javascript" src="./public/scripts/daily.js"></script>
+    <script type="text/javascript" src="./public/scripts/monthly.js"></script>
+    <script type="text/javascript" src="./public/scripts/weekly.js"></script>
   </body>
 </html>
